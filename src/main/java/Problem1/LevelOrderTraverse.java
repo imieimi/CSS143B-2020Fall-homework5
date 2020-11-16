@@ -8,9 +8,9 @@ import java.util.Queue;
 
 public class LevelOrderTraverse {
     public static List<List<Integer>> levelOrder(TreeNode<Integer> root) {
-        // homework
+        // homework - couldn't finish.
         List<List<Integer>> result = new ArrayList<>();
-        //I chose to use LinkedList since its the only one I knew.
+     /*   //I chose to use LinkedList since its the only one I knew.
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         while(!queue.isEmpty()){
@@ -24,6 +24,8 @@ public class LevelOrderTraverse {
                 queue.add(temp.right);
             }
         }
+
+      */
         return result;  // place holder
     }
 }
