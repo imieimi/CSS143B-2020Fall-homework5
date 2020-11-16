@@ -12,9 +12,18 @@ public class LevelOrderTraverse {
         List<List<Integer>> result = new ArrayList<>();
         //I chose to use LinkedList since its the only one I knew.
         Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            TreeNode temp = queue.poll();
+            result.add((List<Integer>) temp.val);
 
 
-
+            if(temp.left != null){
+                queue.add(root.left);
+            }else if(temp.right != null){
+                queue.add(temp.right);
+            }
+        }
         return result;  // place holder
     }
 }

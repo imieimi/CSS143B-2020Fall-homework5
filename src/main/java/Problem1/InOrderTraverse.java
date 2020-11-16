@@ -12,18 +12,14 @@ public class InOrderTraverse {
         Stack<TreeNode> stack = new Stack();
 
         TreeNode current = root;
-        while(current != null){
-            stack.push(current);
-            current = current.left;
-        }
-        while(!stack.isEmpty()){
-            TreeNode temp = stack.pop();
-            result.add((Integer) temp.val);
-            temp = temp.left;
-
-            while(temp != null){
-                stack.push(temp);
-                temp = temp.left;
+        while(!stack.isEmpty() || current != null) {
+            if (current != null) {
+                stack.push(current);
+                current = current.left;
+            } else {
+                current = stack.pop();
+                result.add((Integer) current.val);
+                current = current.right;
             }
         }
         return result;  // place holder
