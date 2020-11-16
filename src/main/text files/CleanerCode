@@ -1,0 +1,20 @@
+What I learned from the "Twelve ways to make code suck less" video/talk:
+
+    Notes:
+    - Good quality code takes less time to understand.
+    - Cohesive code - code should only do the focused one thing well.
+    - Code with intention - understand why you are writing the code.
+    - Beck's Rule for Simple Design(In priority order):
+        - Passes tests
+        - Reveals Intention
+        - No duplication
+        - Fewest Elements
+    - Clear code should be preferred over clever code, meaning it should make sense to everyone, instead
+      of complex code that works but won't make sense easily.
+    - Use commenting to explain why it does what it does instead of what it is.
+
+    Summary of what I learned:
+    My understanding of this video was the idea that like good writing or good design maybe, good code
+    should be simple and understandable, rather than complex and confusing, not only for the person who
+    wrote it, but probably also for others that may see it. This idea makes the code itself less complex
+    and "cleaner", and ends up being higher quality overall.
