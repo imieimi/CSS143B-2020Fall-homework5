@@ -147,9 +147,11 @@ public class Problem3Test {
         //    N   N
         // homework
         // what problem can you see for insertInBst from this test case?
-        // answer:
+        // answer: I think it would have problems since both the left and right are null, so the value might be put into
+        // both?
         // discuss how you would solve it in a comment below
-        // answer:
+        // answer: Maybe change the else statements to an else if statement so that it would specifically only put the
+        // value into one of the branches.
         root = new TreeNode<>(1);
         testCases.add(new BSTTestCase<>(root, 2, Arrays.asList(1, 2)));
         testCases.add(new BSTTestCase<>(root, 3, Arrays.asList(1, 2, 3)));
